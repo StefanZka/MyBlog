@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Creeaza o noua categorie{% endblock %}
+{% block content %}
+
+
+{% if user.is_authenticated %}
+<h1>Creeaza categorie</h1>
+<br/><br/>
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-secondary">Creeaza categoria</button>
+    </form>
+</div>
+
+{% else %}
+
+Ups...acces interzis
+
+{% endif %}
+
+
+
+
+
+{% endblock %}

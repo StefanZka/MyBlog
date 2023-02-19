@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Sterge Articol{% endblock %}
+{% block content %}
+
+{% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
+        <h1>Sterge Articol</h1>
+        <br/><br/>
+        <h3>Sterge: {{post.title}}</h3>
+        <br/>
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %}
+                <strong>Esti sigur?</strong><br/><br/>
+                <button class="btn btn-secondary">Sterge Articol</button>
+            </form>
+        </div>
+    {% else %}
+        Ups..acces interzis
+    {% endif %}
+
+{% else %}
+
+Ups..acces interzis
+
+{% endif %}
+
+
+
+
+
+{% endblock %}
