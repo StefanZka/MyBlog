@@ -12,11 +12,11 @@ Un mediu virtual Python (opțional, dar recomandat)
 Instalare
 
 Clonează acest repository pe calculatorul tău folosind comanda git clone https://github.com/StefanZka/MyBlog.git
-Navighează în folderul proiectului folosind comanda cd MyBlog
-Creează un mediu virtual folosind comanda python -m venv env
-Activează mediul virtual folosind comanda source env/bin/activate (sau env\Scripts\activate în funcție de sistemul de operare)
-Instalează librăriile necesare folosind comanda pip install -r requirements.txt
-Rulează proiectul folosind comanda python manage.py runserver
+Navighează în folderul proiectului folosind comanda 'cd MyBlog'
+Creează un mediu virtual folosind comanda 'python -m venv env'
+Activează mediul virtual folosind comanda 'source env/bin/activate' (sau 'env\Scripts\activate' în funcție de sistemul de operare)
+Instalează librăriile necesare folosind comanda 'pip install -r requirements.txt'
+Rulează proiectul folosind comanda 'python manage.py runserver'
 
 Utilizare
 
